@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_info">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_cpu"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_player"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/lay_buttons"
+       android:orientation="vertical"
+       android:weightSum="5"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="250dp">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/rock"
+           android:text="ROCK"
+           android:layout_weight="1"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/spock"
+           android:text="SPOCK"
+           android:layout_weight="1"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/paper"
+           android:text="PAPER"
+           android:layout_weight="1"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/lizzard"
+           android:text="LIZZARD"
+           android:layout_weight="1"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/scissors"
+           android:text="SCISSORS"
+           android:layout_weight="1"/>
+
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:text=""
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_buttons"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>
